@@ -1,0 +1,1 @@
+ProcessName = "wscript.exe" AND ProcessCmd = ".zip"
