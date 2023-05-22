@@ -1,0 +1,1 @@
+ObjectType = "Process" AND (SrcProcCmdLine Contains AnyCase "http" AND SrcProcCmdLine In Contains AnyCase ("pastebin", "github", "ghostbin", "0bin", "zerobin", "privatebin", "klgrth", ".onion", "termbin", "hatebin", "hastebin", "paste.", "dumpz") AND SrcProcImagePath EndsWith AnyCase "powershell.exe")
