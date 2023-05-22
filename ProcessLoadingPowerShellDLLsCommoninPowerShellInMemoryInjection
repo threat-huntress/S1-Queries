@@ -1,0 +1,6 @@
+(ModulePath EndsWith AnyCase "System.Management.Automation.Dll" OR ModulePath EndsWith AnyCase "System.Management.Automation.ni.Dll") AND NOT (SrcProcImagePath EndsWith AnyCase "CcmExec.exe" OR SrcProcImagePath EndsWith AnyCase "Microsoft.EnterpriseManagement.ServiceManager.UI.Console.exe"
+OR SrcProcImagePath EndsWith AnyCase "SCCMCliCtrWPF.exe" OR SrcProcImagePath EndsWith AnyCase "ScriptEditor.exe" OR SrcProcImagePath EndsWith AnyCase "ScriptRunner.exe" OR SrcProcImagePath EndsWith AnyCase "\System32\RemoteFXvGPUDisablement.exe"
+OR SrcProcImagePath EndsWith AnyCase "\System32\sdiagnhost.exe" OR SrcProcImagePath EndsWith AnyCase "azureadconnect.exe" OR SrcProcImagePath EndsWith AnyCase "micosoft.exchange.servicehost.exe"
+OR SrcProcImagePath EndsWith AnyCase "mmc.exe" OR SrcProcImagePath EndsWith AnyCase "mscorsvw.exe" OR SrcProcImagePath EndsWith AnyCase "powershell.exe"
+OR SrcProcImagePath EndsWith AnyCase "powershell_ise.exe" OR SrcProcImagePath EndsWith AnyCase "wsmprovhost.exe") AND NOT (SrcProcImagePath EndsWith AnyCase "Microsoft Visual Studio"
+OR SrcProcImagePath EndsWith AnyCase "Program Files (x86)")
