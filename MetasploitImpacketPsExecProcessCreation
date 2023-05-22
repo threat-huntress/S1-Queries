@@ -1,0 +1,2 @@
+ObjectType = "Process" AND ((osSrcProcParentName EndsWith AnyCase "services.exe" OR SrcProcParentName EndsWith AnyCase "services.exe") AND SrcProcImagePath
+RegExp "^C\\Windows\\[a-zA-Z]{8}\.exe$" AND NOT SrcProcImagePath = "C:\Windows\explorer.exe")
